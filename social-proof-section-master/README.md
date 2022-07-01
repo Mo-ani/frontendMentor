@@ -2,6 +2,8 @@
 
 ![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
 
+## [LinkChallenge](https://mo-ani.github.io/frontendMentor/social-proof-section-master/)
+
 ## Welcome! 👋
 
 This is a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Coded by [me!](https://www.frontendmentor.io/profile/Mo-ani)😁
