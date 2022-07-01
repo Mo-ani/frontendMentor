@@ -5,13 +5,16 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
+- Tablet : 768px
+- Something : 894px   //los breakpoints son para que al aumentar la pantalla no sea tan brusco al aumentarlo 
+- Something : 1000px
 - Desktop: 1440px
 
 ## Colors
 
 ### Primary
 
-Very Dark Magenta: hsl(300, 43%, 22%)
+Very Dark Magenta: 375
 Soft Pink: hsl(333, 80%, 67%)
 
 ### Neutral
