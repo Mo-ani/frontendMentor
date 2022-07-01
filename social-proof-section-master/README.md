@@ -26,9 +26,9 @@ For the build I've been watching css and flexbox videos, I love practicing with 
 
 ## Notes
 
-For this project I have put the break points to see the project cleaner been put the break points for that see clean. 
+For this project, I have set breakpoints to make the project look cleaner. 
 
-## Contact me 💼
+## Contact me 
 + [Twitter](https://twitter.com/Peterpankerbell)
 + [Linkedin](https://www.linkedin.com/feed/)
 + [FrontendMentor](https://www.frontendmentor.io/profile/Mo-ani)
