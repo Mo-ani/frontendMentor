@@ -2,7 +2,7 @@
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
-[Preview-site]()
+## [Preview-site](https://mo-ani.github.io/frontendMentor/product-preview-card-component-main/index.html)
 
 ## Welcome! 👋
 
