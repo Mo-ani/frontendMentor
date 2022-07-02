@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --over-dark-cyan: hsl(159, 37%, 22%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cream);
+    width: 100vw;
+}
+.containercard{
+    width: 75%;
+    min-width: 350px;
+    max-width: 700px;
+    height: 625px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin:100px auto;
+}
+/*----------------header----------*/
+.hidden-img{
+    overflow: hidden;
+    width: 100%;
+    height: 245px;
+}
+.hidden-img .mobile{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition-duration: .5s;
+} 
+.hidden-img .desktop{
+    display: none;
+}
+
+/*----------Plus-----------------------*/
+.hidden-img .mobile:hover{
+    opacity: .5;
+    transform: scale(1.3) rotate(5deg);
+}
+/*-----------------cuerpo---------------*/
+.cuerpocard{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 60%;
+    margin: 11px 0 0 0;
+}
+.cuerpocard .perfume{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-family: var(--montserrat);
+    color:var(--dark-grayish-blue);
+    
+}
+.description h1{
+    line-height: 35px;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    font-family: var(--fraunces);
+    padding: 10px 0 7px 0;
+}
+.description p{
+    margin: 7px 0;
+    line-height: 25px;
+    font-family: var(--montserrat);
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+}
+/*----------------price and buttom-----------------*/
+.action{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 120px;
+    position: relative;
+}
+.action h1{
+    font-family: var(--fraunces);
+    color: var(--dark-cyan);
+}
+.action span{
+    font-family: var(--montserrat);
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    text-decoration:line-through;
+}
+.action button{
+    grid-column: 1/3;
+    height: 55px;
+    border-radius: 10px;
+    background-color: var(--dark-cyan);
+    border: none;
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.action button:hover{
+    background-color: var(--over-dark-cyan);
+}
+.action button img{
+    width: 15px;
+}
+/*--------------footer----------------*/
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    min-width: 350px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+/*media query*/
+/*-------------->870----------------*/
+@media only screen and (min-width: 870px){
+    .containercard{
+        flex-direction: row;
+        
+    }
+    .hidden-img .mobile{
+        display: none;
+    }
+    .hidden-img{
+        max-width: 350px;
+        height: 100%;
+        background: url(images/image-product-desktop.jpg);
+        background-size:cover;
+        transition: .5s;
+    }
+    .hidden-img:hover{
+        opacity: .5;
+    }
+    .cuerpocard{
+        width: 290px;
+        height: 600px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .perfume{
+        margin-bottom:25px;
+    }
+    .description h1{
+        line-height: 40px;
+        font-size: 35px;
+    }
+    .description p{
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .action h1{
+        font-size: 40px;
+    }
+    .action span{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .action button{
+        margin-top: 40px;
+    }
+}
